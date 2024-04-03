@@ -49,6 +49,7 @@ Memory Deallocation
 28.	Return from the main function.
 
 ## PROGRAM:
+### UNROLLING 8
 ```
 %%cuda
 #include <sys/time.h>
@@ -270,6 +271,7 @@ __global__ void reduceUnrolling16(int *g_idata, int *g_odata, unsigned int n)
 }
 
 ```
+### UNROLLING 16
 ```
 %%cuda
 #include <sys/time.h>
@@ -487,10 +489,12 @@ __global__ void reduceUnrolling16(int *g_idata, int *g_odata, unsigned int n)
 ```
 
 ## OUTPUT:
+### UNROLLING 8
 ![Screenshot 2024-04-03 111550](https://github.com/Pavithraramasaamy/PCA-EXP-3-PARALLEL-REDUCTION-USING-UNROLLING-TECHNIQUES-AY-23-24/assets/118596964/ef431a4f-1ce2-44bc-92c6-b188b10c3d43)
 
+### UNROLLING 16
 ![Screenshot 2024-04-03 111544](https://github.com/Pavithraramasaamy/PCA-EXP-3-PARALLEL-REDUCTION-USING-UNROLLING-TECHNIQUES-AY-23-24/assets/118596964/f48f378a-215b-432f-97c1-f1d5a9c9be4b)
 
 
 ## RESULT:
-Thus the program has been executed by unrolling by 8 and unrolling by 16. It is observed that _________ has executed with less elapsed time than _____________ with blocks_____,______.
+Thus the program has been executed by unrolling by 8 and unrolling by 16. It is observed that 524288 has executed with less elapsed time than 1048576 with blocks 2.71 ms,126.38 ms.
