@@ -497,4 +497,4 @@ __global__ void reduceUnrolling16(int *g_idata, int *g_odata, unsigned int n)
 
 
 ## RESULT:
-Thus the program has been executed by unrolling by 8 and unrolling by 16. It is observed that 524288 has executed with less elapsed time than 1048576 with blocks 2.71 ms,126.38 ms.
+Thus the program has been executed by unrolling by 8 and unrolling by 16. It is observed that 524288 has executed with less elapsed time than 1048576 with blocks 2.93 ms,120.69 ms.
